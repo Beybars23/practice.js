@@ -1,18 +1,18 @@
 document.querySelector("h1").innerHTML="Beybars CS2117";
 
 const now=new Date();
-alert("Year: " +now.getFullYear());
-alert("Today is: " +now.getDay());
-alert("Date: " +now.getDate());
-alert("Month: " +now.getMonth(+1));
-alert("Current time is: " + now.getHours() + ":" + now.getMinutes());
+document.write("Year: " + now.getFullYear() + "<br/>");
+document.write( "Today is: " + now.getDay() + "<br/>");
+document.write("Date: " + now.getDate() + "<br/>");
+document.write("Month: " + now.getMonth() + "<br/>");
+document.write("Current time is: " + now.getHours() + ":" + now.getMinutes() + "<br/>");
 
 var y = now.getFullYear();
 var m = now.getMonth();
 var d = now.getDate();
 var sum = y * 365 + m * 31 + d;
 var days = 365 * 2024 - sum;
-document.write("Days until graduation: " + days);
+document.write(  days + " days left until the freedom!" + "<br/>");
 
 function multiplyBy(){
 	num1=document.getElementById("1Num").value;
